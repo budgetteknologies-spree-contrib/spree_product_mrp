@@ -1,7 +1,7 @@
 SpreeProductMrp
 ===============
 
-Introduction goes here.
+This gem add mrp to products backend and database
 
 ## Installation
 
