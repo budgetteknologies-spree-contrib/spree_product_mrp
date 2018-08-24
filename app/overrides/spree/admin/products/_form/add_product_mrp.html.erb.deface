@@ -1,0 +1,2 @@
+<!-- insert_after "[data-hook='admin_product_form_price']" -->
+<%= render partial: 'spree/admin/products/mrp_field', locals: { f: f } %>

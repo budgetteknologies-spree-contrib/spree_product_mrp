@@ -1,0 +1,7 @@
+<div data-hook="admin_product_form_mrp">
+ <%= f.field_container :mrp, class: ['form-group'] do %>
+	 <%= f.label :mrp, raw(Spree.t(:mrp) + content_tag(:span, ' *', class: "required")) %>
+	 <%= f.text_field :mrp, value: number_to_currency(@product.mrp, unit: ''), class: 'form-control', disabled: (cannot? :update, @product.mrp) %>
+	 <%= f.error_message_on :mrp %>
+ <% end %>
+</div>
